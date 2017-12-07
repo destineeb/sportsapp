@@ -1,0 +1,89 @@
+// Styling for the navbar
+@mixin body-font() {
+  font-family: 'Lato';
+}
+
+@mixin heading-font() {
+  font-weight: 700;
+  font-family: 'Montserrat';
+}
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$primary: #18BC9C !default;
+$secondary: #2C3E50 !default;
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  @include heading-font;
+  .navbar-brand {
+    color: $white;
+  }
+  .navbar-nav {
+    margin-top: 1rem;
+    letter-spacing: 0.0625rem;
+    li.nav-item {
+      a.nav-link {
+        color: $white;
+        &:hover {
+          color: $primary;
+        }
+        &:active,
+        &:focus {
+          color: $white;
+        }
+        &.active {
+          color: $primary;
+        }
+      }
+    }
+  }
+  .navbar-toggler {
+    font-size: 80%;
+    padding: 0.8rem;
+  }
+}
+@media(min-width:992px) {
+  #mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    .navbar-brand {
+      font-size: 2em;
+      -webkit-transition: font-size 0.3s;
+      -moz-transition: font-size 0.3s;
+      transition: font-size 0.3s;
+    }
+    .navbar-nav {
+      margin-top: 0;
+    }
+    .navbar-nav > li.nav-item > a.nav-link.active {
+      color: $white;
+      background: $primary;
+      &:active,
+      &:focus,
+      &:hover {
+        color: $white;
+        background: $primary;
+      }
+    }
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    .navbar-brand {
+      font-size: 1.5em;
+    }
+  }
+}

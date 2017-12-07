@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sports:</strong>
+  <%= @sport.sports_id %>
+</p>
+
+<p>
+  <strong>Sports type:</strong>
+  <%= @sport.sports_type %>
+</p>
+
+<%= link_to 'Edit', edit_sport_path(@sport) %> |
+<%= link_to 'Back', sports_path %>
