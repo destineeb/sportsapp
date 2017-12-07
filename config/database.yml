@@ -26,6 +26,6 @@ test:
   <<: *default
   database: intramural_teams_test
 
-#production:
-#  <<: *default
-#  database: intramural_teams
+production:
+  <<: *default
+  database: intramural_teams
