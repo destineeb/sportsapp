@@ -183,7 +183,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   jquery-rails
-  pg
+  pg (~> 0.21.0)
   puma (~> 3.7)
   rails (~> 5.1.4)
   ruby
