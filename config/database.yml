@@ -10,7 +10,7 @@ default: &default
   timeout: 5000
   root: root
   password: admin
-  host: 127.0.0.1
+  host: 10.110.167.129
   socket: 'MYSQL'
 
 development:
