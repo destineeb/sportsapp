@@ -10,7 +10,7 @@ default: &default
   timeout: 5000
   root: root
   password: admin
-  host: 127.0.0.1
+  host: localhost
 
 development:
   adapter: mysql2
