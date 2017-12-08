@@ -28,5 +28,5 @@ test:
   database: intramural_teams_test
 
 production:
-  <<: *default
+  adapter: postgresql
   database: intramural_teams_production
