@@ -11,7 +11,7 @@ default: &default
   root: root
   password: admin
   host: localhost
-  socket: 'MYSQL'
+  socket: '/tmp/mysql.sock'
 
 development:
   adapter: mysql2
