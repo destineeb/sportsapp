@@ -27,7 +27,7 @@ test:
   <<: *default
   database: intramural_teams_test
 
-heroku addons: create heroku-postgresql
+#heroku addons: create heroku-postgresql
 
 production:
   adapter: postgresql
