@@ -27,6 +27,12 @@ test:
   <<: *default
   database: intramural_teams_test
 
+heroku addons:create heroku-postgresql
+
 production:
-  adapter: postgresql
-  database: intramural_teams_production
+ adapter: postgresql
+ encoding: unicode
+ host: localhost
+ # For details on connection pooling, see rails configuration guide
+ # http://guides.rubyonrails.org/configuring.html#database-pooling
+ pool: 5
