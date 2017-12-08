@@ -10,15 +10,14 @@ default: &default
   timeout: 5000
   root: root
   password: admin
-  host: localhost
-  socket: 
+  host: 127.0.0.1
 
 development:
   adapter: mysql2
   user: root
 # password: testuser
   password: admin
-  database: ENV['intramural_teams']
+  database: intramural_teams
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
